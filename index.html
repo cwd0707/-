@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Bootstrap 实例 - 带有下拉菜单的标签页</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+
+	body{
+		background-color:#b8e6f8;
+		background-image:url(img/down.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-size: cover;
+		overflow: auto;
+	    }
+	
+	#div1{ width: 400px;
+		   height: 1000px;
+		   margin: 0 auto;
+		   margin-top: 40px;
+		       
+		}
+    .logo{margin: 0 auto;
+		  width: 128px;
+		  margin-bottom:20px ;
+		  }
+	#con_one_1{position: absolute;
+			width: 400px;
+            height: 327px;
+            background-color: white;
+            border-radius: 4px;
+           }
+
+
+		  
+	.top{width: 400px;
+		 height: 60px;
+		 background-color: white;
+		 
+		}
+	#one2,#one1{display: inline-block;
+			   font-size: 16px;
+			   line-height: 60px;
+			   margin-left: 20px;
+			   cursor: pointer;
+		       }
+		
+	span{padding: 0px 10px 0px 10px;
+		 font-size: 24px;
+		}
+	.shuru{width: 350px;
+		   height: 50px;
+		   margin: 0 auto;
+		   font-size: 16px;
+		   margin-top: 30px;
+	       border-bottom:1px solid gainsboro;
+	       color: darkgray;
+		   }
+		   
+    .shuru input{border: none;
+		         outline: none;
+		         width: 235px;
+		         height: 43px;
+		         color: darkgray;
+		        }
+	.shuru-2{width: 350px;
+		     height: 50px;
+		     margin: 0 auto;
+	 	     font-size: 16px;
+		     margin-top: 30px;
+		     border-bottom:1px solid gainsboro;
+		     color: darkgray;
+		    }
+		    
+    .shuru-2 input{border: none;
+		           outline: none;
+		           width: 220px;
+		           height: 43px;
+		           float: left;
+		           font-size: 15px;
+		           color: darkgray;
+		           }
+	.shuru-2 span{float: right;
+	              width: 120px;
+	              font-size: 15px;
+	              line-height: 43px;
+	              color: darkgray;
+	              }
+	              
+	.shuru-2 a:link{text-decoration: none;}
+	.shuru-2 a:visited{color: gray;}
+	.yuyin   a:link{text-decoration: none;color: gray;}
+	
+	.yuyin span{float: right;
+	            font-size:15px;
+	            margin-right: 35px;
+	            margin-top: 10px;
+	            }
+	            
+    .bottom{color: gray;
+            width: 400px;
+            height: 60px;
+            background-color:#f6f6f6;
+            margin-top: 280px;
+            position: absolute;
+            }
+     p{margin: 0;}
+     .bottom-1{width: 310px;
+               height: 60px;
+               float:left;
+               margin-top: 10px;
+               margin-left: 10px;
+               }
+               
+	.bottom-2{float: right;
+	          line-height: 60px;
+	          margin-right: 10px;
+	          }
+    .bottom-1 a:link{color: gray;}
+    .bottom-1 a:visited{color: gray;}
+		     
+	#div2{position:absolute;
+		  margin-top: 390px;
+		  width: 400px;
+		  height: 60px;
+		  background-color:#f6f6f6;
+		  border-radius: 8px;
+		  }
+    #div2 span{font-size: 16px;
+          color: gray;
+          line-height: 60px;
+          margin-left: 20px;
+          float: left;
+          }
+	ul{float: right;}
+    li{list-style: none;
+       text-decoration: none;
+       float: left;
+       height: 60px;
+       line-height: 60px;
+       margin-right: 20px;
+       color: gray;
+       }
+	#div3{width: 400px;
+	      height: 42px;
+	      position: absolute;
+	      background-color:#F6F6F6;
+	      border-radius: 8px;
+	      margin-top: 480px;
+	      }
+	.z{width: 140px;
+	   height: 42px;
+	   margin: 0 auto;
+	   line-height: 42px;
+	   }
+    .z a{list-style: none;text-decoration: none;}
+    .z img{margin-right: 10px;
+          border-radius: 5px;
+          }
+    .anniu{width: 400px;
+           height: 42px;
+           position: absolute;
+           margin-top: 200px;
+           }
+
+    .hover{font-weight: 700; border-bottom: 3px solid dodgerblue;}
+
+		      
+ 
+    	   #con_one_2{position: absolute;
+			    width: 400px;
+                height: 327px;
+                background-color: white;
+                border-radius: 4px;
+               	 
+		       }
+		.shuru--{width: 352px;
+		    height: 50px;
+		    margin: 0 auto;
+		    
+		    margin-top: 30px;
+		    border-bottom:1px solid gainsboro;
+		    color: darkgray;
+		    }
+		   .shuru-- input{border: none;
+		          outline: none;
+		          font-size: 15px;
+		          width: 352px;
+		          height: 43px;
+		          color: darkgray;
+		          }
+		   .shuru-2--{width: 350px;
+		    height: 50px;
+		    margin: 0 auto;
+		    font-size: 16px;
+		    margin-top: 30px;
+		    border-bottom:1px solid gainsboro;
+		    color: darkgray;
+		    }
+		    .shuru-2-- input{border: none;
+		          outline: none;
+		          width: 352px;
+		          height: 43px;
+		          float: left;
+		          font-size: 15px;
+		          color: darkgray;
+		          }
+		    .shuru-2-- span{float: right;width: 120px;font-size: 15px;line-height: 43px;color: darkgray;}
+		    .shuru-2-- a:link{text-decoration: none;}
+		    .shuru-2-- a:visited{color: gray;}
+		    .yuyin--{width: 370px;height: 40px;margin: 0 auto;}
+		    .yuyin-- a:link{text-decoration: none;color: gray;}
+		    .yuyin-- .span-1{float:left;margin-top: 10px;font-size: 15px;}
+		    .yuyin-- .span-2{float:right;margin-top: 10px;font-size: 15px;}
+			.s{display: none;}
+			
+		 
+</style>
+<body>
+<div id="div1">
+			<div class="logo"><img src="img/zhihu.png"width="128px"></div>
+			<div class="top">
+				  <div id="one1"style="80px; height: 60px;" onclick="setTab('one',1,2)"class="hover">免密码登录</a></div>
+				  <div id="one2"style="70px; height: 60px;" onclick="setTab('one',2,2)">密码登录</a></div>
+			</div>
+			<div id="con_one_1">
+				<div class="shuru">
+				中国 +86<span>|</span> <input  type="text"  placeholder="手机号"/>
+				</div>
+				<div class="shuru-2">
+					<input  type="text"  placeholder="请输入6位短信验证码"/>
+					<span><a href="#">获取短信验证</a></span>
+				</div>
+				<div class="yuyin">
+					<span><a href="#">接收语音验证</a></span>
+			   </div>
+            </div>
+            <div id="con_one_2" class="s">
+				<div class="shuru--">
+				<input  type="text"  placeholder="手机号或邮箱"/>
+				</div>
+				<div class="shuru-2--">
+					<input  type="text"  placeholder="密码"/>
+				</div>
+				<div class="yuyin--">
+					<span class="span-1"><a href="#">海外手机号登录</a></span>
+					<span class="span-2"><a href="#">忘记密码？</a></span>
+			   </div>
+			</div>
+            
+
+		<div class="anniu">
+			<input type="button" value="注册/登录"style="width:350px;height: 36px;margin-left: 25px;margin-top: 20px;border:none;background-color: dodgerblue;color: white;border-radius:6px;"/>
+		</div>
+		
+		<div class="bottom">
+			<div class="bottom-1">
+					<p>未注册手机验证后自动登录</p>
+					注册即代表同意<a href="#">《知乎协议》</a><a href="#">《隐私保护指引》</a>
+			</div>
+			<div class="bottom-2"><a href="#">注册机构号</a></div>
+		</div>
+
+        <div id="div2">
+            <span>社交账号登录</span>
+            <ul>
+            	<li><img src="logo/微信.png"width="20px"height="20px">  微信 </li>
+                <li><img src="logo/qq.png"width="20px"height="20px">  QQ</span></li>
+            	<li><img src="logo/微博.png" width="20px"height="20px">  微博</li>
+            </ul>
+        </div>
+        
+        <div id="div3">
+            <div class="z">
+            	<img src="img/zhi.png"width="20px"height="20px">
+            	<a href="#">下载知乎<span style="font-size: 14px;">APP</span></a>
+            </div>
+        </div>
+            
+</div>
+</body>
+           <script type="text/javascript">
+           	  function setTab(name,cursel,n){
+           	  	for(i=1;i<=n;i++){
+           	  		var menu=document.getElementById(name+i);
+           	  		var con=document.getElementById("con_"+name+"_"+i);
+           	  		menu.className=i==cursel?"hover":"";
+           	  		con.style.display=i==cursel?"block":"none";
+           	  	}
+           	  }
+           </script>
+
+
+
+</html>
